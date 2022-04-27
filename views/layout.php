@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/output.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header class="bg-orange-500">
@@ -21,7 +21,7 @@
         </nav>
     </header>
     <?php echo $mostrar ?>
-    <footer class="footer">
+    <footer class="bg-black text-white">
         <p>HECHO POR M3RLIN</p>
     </footer>
 </body>
