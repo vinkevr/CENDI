@@ -1,6 +1,11 @@
-<main class="grid place-items-center mt-3">
+<main class="md:grid md:place-items-center mt-3 p-2">
+    <div class="flex flex-col md:flex-row md:justify-center gap-2 md:items-center mb-5">
+    <button data-paso="1" class="btn btnActual uppercase font-medium text-white bg-red-700 px-3 py-2 hover:bg-red-900">Datos del niño</button>
+    <button data-paso="2" class="btn uppercase font-medium text-white bg-red-700 px-3 py-2 hover:bg-red-900">Datos DERECHOHABIENTE</button>
+    <button data-paso="3" class="btn uppercase font-medium text-white bg-red-700 px-3 py-2 hover:bg-red-900">Datos conyuge</button>
+    </div>
     <form action=""method="POST" class="bg-slate-400 p-4 rounded-md shadow shadow-black">
-        <div data-paso="1">
+        <div id="paso-1" class="mostrar">
             <legend>DATOS DEL NIÑO O DE LA NIÑA</legend>
             <div>
             <label for="Papellido">PRIMER APELLIDO: </label>
@@ -14,6 +19,7 @@
             <label for="Nombre">NOMBRE: </label>
             <input class="block w-full" type="text" name="Nombre">
             </div>
+            <div>
             <label for="fnac">FECHA DE NACIMIENTO: </label>
             <input class="block w-full" type="date" name="fnac">
             </div>
@@ -26,7 +32,8 @@
             <input class="block w-full" type="text" name="CURP">
             </div>
         </div>
-        <div data-paso="2">
+
+        <div id="paso-2" class="ocultar">
             <legend>DATOS DEL O DE LA DERECHOHABIENTE</legend>
             <div>
             <label for="PDE">PRIMER APELLIDO: </label>
@@ -40,6 +47,7 @@
             <label for="nombreDE">NOMBRE(S): </label>
             <input class="block w-full" type="text" name="nombreDE">
             </div>
+            <div>
             <label for="calle">CALLE: </label>
             <input class="block w-full" type="text" name="calle">
             </div>
@@ -56,12 +64,16 @@
             <input class="block w-full" type="text" name="colonia">
             </div>
             <div>
-            <label for="alcmuni">ALCALDIA O MUNICIPIO:  </label>
-            <input class="block w-full" type="text" name="alcmuni">
+            <label for="entidad">ENTIDAD FEDERATIVA:  </label>
+            <select class="entidad block w-full text-center" name="entidad">
+                <option selected disabled>---Seleccione una opción---</option>
+            </select>
             </div>
             <div>
-            <label for="entidad">ENTIDAD FEDERATIVA:  </label>
-            <input class="block w-full" type="text" name="entidad">
+            <label for="alcmuni">ALCALDIA O MUNICIPIO:  </label>
+            <select class="municipio block w-full text-center" id="municipio"  name="alcmuni">
+                <option selected disabled>---Seleccione una opción---</option>
+            </select>
             </div>
             <div>
             <label for="cp">C.P:  </label>
@@ -116,7 +128,8 @@
             <input class="block w-full" type="number" name="extencionDE">
             </div>
         </div>
-        <div data-paso="3">
+
+        <div id="paso-3" class="ocultar">
             <legend>DATOS DEL CONYUGE (PADRE,MADRE)</legend>
             <div>
             <label for="PapePM">PRIMER APELLIDO: </label>
@@ -130,6 +143,7 @@
             <label for="nombrePM">NOMBRE(S): </label>
             <input class="block w-full" type="text" name="nombrePM">
             </div>
+            <div>
             <label for="callePM">CALLE: </label>
             <input class="block w-full" type="text" name="callePM">
             </div>
@@ -146,12 +160,16 @@
             <input class="block w-full" type="text" name="coloniaPM">
             </div>
             <div>
-            <label for="alcmuniPM">ALCALDIA O MUNICIPIO:  </label>
-            <input class="block w-full" type="text" name="alcmuniPM">
+            <label for="entidadPM">ENTIDAD FEDERATIVA:  </label>
+            <select class="entidad text-center block w-full" name="entidadPM">
+            <option selected disabled>---Seleccione una opción---</option>
+            </select>
             </div>
             <div>
-            <label for="entidadPM">ENTIDAD FEDERATIVA:  </label>
-            <input class="block w-full" type="text" name="entidadPM">
+            <label for="alcmuniPM">ALCALDIA O MUNICIPIO:  </label>
+            <select class="municipio text-center block w-full" name="alcmuniPM">
+            <option selected disabled>---Seleccione una opción---</option>
+            </select>
             </div>
             <div>
             <label for="cpPM">C.P:  </label>
@@ -181,6 +199,8 @@
             <label for="extPM">EXTENSION:  </label>
             <input class="block w-full" type="number" name="extPM">
             </div>
+
+            <button class="bg-rose-500 text-white p-2 mt-3 w-full uppercase" type="submit">Registrar</button>
         </div>
     </form>
 

@@ -13,16 +13,21 @@
 <body>
     <header class="bg-orange-500">
         <nav class="nav">
+            <p>logo</p>
             <ol>
                 <a href="">xd</a>
                 <a href="">xd</a>
-                <a href="">xd</a>
+                <a href="">Cerrar sesión</a>
             </ol>
         </nav>
     </header>
+    <div>
     <?php echo $mostrar ?>
-    <footer class="bg-black text-white">
-        <p>HECHO POR M3RLIN</p>
+    </div>
+
+    <footer class="bg-black text-white mt-3">
+        <p>Todos los derechos reservados</p>
     </footer>
+    <script src="/js/bundle.min.js"></script>
 </body>
 </html>

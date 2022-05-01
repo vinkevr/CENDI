@@ -7,6 +7,7 @@ require_once '../includes/app.php';
 
 use MVC\Router;
 use Controllers\LoginController;
+use Controllers\MexicoController;
 use Controllers\UsuariosController;
 $router = new Router();
 
@@ -27,5 +28,8 @@ $router->post('/usuarios/actualizar', []);
 
 $router->post('/usuarios/eliminar', []);
 
+//Estados y municipios de México
+$router->get('/mexico', [MexicoController::class, 'estadosRepublica']);
+$router->get('/mexico/municipios', [MexicoController::class, 'municipios']);
 
 $router->comprobarRutas();
