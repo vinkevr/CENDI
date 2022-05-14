@@ -1,6 +1,6 @@
-<main class="bg-green-500">
-<div>
-    IMAGEN
+<main class="bg-blue-400">
+<div class="text-center text-amber-700 uppercase font-bold">
+    Imsgen
 </div>
   <form method="POST" action="/">
       <?php include_once './../includes/templates/errores.php' ?>

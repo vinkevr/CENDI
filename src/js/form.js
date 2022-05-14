@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  //Esperar a que cargue el html
   formulario();
   agregarEstados();
 });

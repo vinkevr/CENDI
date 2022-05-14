@@ -9,4 +9,5 @@ return array(
     'Models\\' => array($baseDir . '/models'),
     'MVC\\' => array($baseDir . '/'),
     'Controllers\\' => array($baseDir . '/controllers'),
+    'Classes\\' => array($baseDir . '/classes'),
 );

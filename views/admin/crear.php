@@ -4,7 +4,7 @@
     <button data-paso="2" class="btn uppercase font-medium text-white bg-red-700 px-3 py-2 hover:bg-red-900">Datos DERECHOHABIENTE</button>
     <button data-paso="3" class="btn uppercase font-medium text-white bg-red-700 px-3 py-2 hover:bg-red-900">Datos conyuge</button>
     </div>
-    <form action=""method="POST" class="bg-slate-400 p-4 rounded-md shadow shadow-black">
+    <form action=""method="POST" class="bg-blue-500 p-4 rounded-md shadow shadow-black">
         <div id="paso-1" class="mostrar">
             <legend>DATOS DEL NIÑO O DE LA NIÑA</legend>
             <div>
