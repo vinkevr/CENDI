@@ -29,7 +29,7 @@ class Router {
         //$protegidas = ['/admin, /usuarios, /usuarios/crear, /usuarios/actualizar, /usuarios/eliminar'];
 
         if( $metodo === 'POST'){
-            //Obtengo la fn que ejecuta esa ruta
+            //Obtengo la funcion que ejecuta esa ruta
            $fn = $this->rutasPost[$urlActual] ?? NULL;
 
         }else{
